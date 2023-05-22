@@ -1,0 +1,93 @@
+.login{
+    width: 100vw;
+    height: 100vh;
+    background-color: #020230;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.loginwrapper{
+    width: 60%;
+    height: 35%;
+   display: flex;
+   gap: 20%;
+}
+.loginleft,.loginright{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.loginlogo{
+    font-size: 50px;
+    font-family: 800px;
+    color: white;
+    margin-bottom: 10px;
+     text-align: center;
+     animation: bounce 3s ease-in-out infinite;
+
+}
+
+
+@keyframes bounce {
+    0%,100%
+    {
+      transform: translateY(-330px);
+    }
+    50% {
+      transform: translateY(270px);
+    }
+    
+  }
+.loginbox{
+    height: 300px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
+}
+.logininput{
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid grey;
+    font-size: 18px;
+    padding-left: 20px;
+}
+.logininput:focus{
+    outline: none;
+}
+.loginright{
+    height: 200px;
+}
+.loginregister{
+    width: 100%;
+    align-self: center;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    background-color: #42b72a;
+    color:white;
+    font-size: 20px;
+    font-weight: 500px;
+    cursor: pointer; 
+}
+@media (max-width: 767px) {
+    .loginwrapper {
+      flex-direction: column;
+      gap: 50px;
+
+    }
+    
+    .login{
+        height: 40vh;
+       
+    }
+    
+    .loginlogo{
+        animation: none;
+    }
+
+  }

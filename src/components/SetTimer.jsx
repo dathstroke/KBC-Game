@@ -16,7 +16,7 @@ export default function SetTimer({setstop,questionnumber}) {
     };
   }, [setstop,timer]);
   useEffect(() => {
-   settimer(30);
+   settimer(1000);
   }, [questionnumber]);
   
 

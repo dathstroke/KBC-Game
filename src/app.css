@@ -1,18 +1,20 @@
-.app{
+.app {
     height: 100vh;
     display: flex;
     color: white;
-    background-color:#020230;
+    background-color: #020230;
 }
-.main{
+
+.main {
     width: 75%;
-    background: linear-gradient(to bottom,rgba(0,0,0,0),#020230), url(./assets/kbc.jpg) center;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #020230), url(./assets/kbc.jpg) center;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     flex-direction: column;
 }
-.endtext{
+
+.endtext {
     position: relative;
     top: 0;
     bottom: 0;
@@ -20,44 +22,49 @@
     left: 0;
     margin: auto;
 }
-.top{
+
+.top {
     height: 50%;
     position: relative;
 }
-.bottom{
+
+.bottom {
     height: 50%;
 }
 
 
 
-  
-.questions{
+
+.questions {
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
 }
-.question{
+
+.question {
     width: 80%;
-    background: linear-gradient(#100241,black);
+    background: linear-gradient(#100241, black);
     border: 2px solid white;
     text-align: center;
     padding: 20px;
     border-radius: 10px;
     font-size: 20px;
 }
-.answers{
+
+.answers {
     width: 100%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
-.answer{
+
+.answer {
     width: 40%;
     padding: 15px;
     text-align: center;
-    background: linear-gradient(#0e0124,#22074d);
+    background: linear-gradient(#0e0124, #22074d);
     border: 1px solid white;
     border-radius: 15px;
     font-size: 20px;
@@ -66,48 +73,72 @@
     cursor: pointer;
 
 }
-.loading{
+
+.loading {
     width: 400px;
     height: 400px;
     display: flex;
     position: relative;
-   top: 150px;
+    top: 150px;
     align-self: center;
     justify-content: center;
 }
-.answer:hover,.answer.active{
+
+.answer:hover,
+.answer.active {
     background: mediumblue;
 
 }
-.answer.correct{
-    animation: correct 3s ease forwards;
+
+.answer.correct {
+    animation: correct 2s ease forwards;
 }
-@keyframes correct{
-    0%,22%,42% {
+
+@keyframes correct {
+
+    0%,
+    22%,
+    42% {
         background: mediumblue;
     }
-    20%,40%,60%{
-        background: linear-gradient(#0e0124,#22074d);
+
+    20%,
+    40%,
+    60% {
+        background: linear-gradient(#0e0124, #22074d);
     }
-    62%,100%{
+
+    62%,
+    100% {
         background: green;
     }
 }
-.answer.wrong{
-    animation: wrong 3s ease forwards;
+
+.answer.wrong {
+    animation: wrong 2s ease forwards;
 }
-@keyframes wrong{
-    0%,22%,42% {
+
+@keyframes wrong {
+
+    0%,
+    22%,
+    42% {
         background: mediumblue;
     }
-    20%,40%,60%{
-        background: linear-gradient(#0e0124,#22074d);
+
+    20%,
+    40%,
+    60% {
+        background: linear-gradient(#0e0124, #22074d);
     }
-    62%,100%{
+
+    62%,
+    100% {
         background: crimson;
     }
 }
-.timer{
+
+.timer {
     width: 90px;
     height: 90px;
     border-radius: 50%;
@@ -123,37 +154,44 @@
 
 
 }
-.pyramid{
+
+.pyramid {
     width: 25%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.moneylist{
+
+.moneylist {
     list-style: none;
     width: 100%;
     padding: 20px;
 }
-.moneylistitem{
-     display: flex;
-     align-items: center;
-     padding:5px;
-     border-radius: 5px ;
-     margin: 10px;
+
+.moneylistitem {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 10px;
 }
-.moneylistitem.active{
+
+.moneylistitem.active {
     background-color: teal;
 }
-.moneylistitemnumber{
+
+.moneylistitemnumber {
     font-size: 18px;
     font-weight: 100;
     width: 30%;
 }
-.moneylistitemamount{
+
+.moneylistitemamount {
     font-size: 20px;
     font-weight: 300;
 }
-.start{
+
+.start {
     width: 250px;
     height: 300px;
     display: flex;
@@ -164,50 +202,57 @@
     top: 0;
     margin: auto;
 }
-.startinput{
+
+.startinput {
     width: 100%;
     height: 30px;
     border: none;
     border-radius: 5px;
     text-align: center;
     font-size: 18px;
-    margin-bottom: 20px ;
+    margin-bottom: 20px;
 }
-.startinput:focus{
+
+.startinput:focus {
     outline: none;
 }
-button{
-    
+
+button {
+
     width: 100%;
     height: 30px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-size: 18px;
-     font-weight: 500;
+    font-weight: 500;
 }
 
-@media (max-width: 768px) {
-    .main{
+@media (max-width: 763px) {
+    .main {
         width: 100%;
-        height: 90vh;
+        height: 95vh;
     }
+
     .pyramid {
         display: none;
     }
-    .timer{
-        bottom:70px;
-        left:70px;
+
+    .timer {
+        bottom: 30px;
+        left: 70px;
         font-size: 20px;
         width: 60px;
         height: 60px;
     }
-    .answer{
+
+    .answer {
         height: 10px;
         text-align: center;
         font-size: 17px
     }
-    .question{
+
+    .question {
         height: 30px;
         margin-bottom: 10px;
         font-size: 18px;
@@ -217,8 +262,6 @@ button{
         text-align: center;
     }
 
-    
-
-  }
 
 
+}
